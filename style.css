@@ -1,0 +1,33 @@
+body {
+    background-color: hsl(218, 23%, 16%);
+}
+
+#advice-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: hsl(217, 19%, 38%);
+    border-radius: 20px;
+    position: absolute;
+    -ms-transform: translateY(-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 300px;
+    padding-bottom: 40px;
+
+}
+
+
+
+/* desktop .....................................................................................*/
+
+
+/* #advice-container {
+    display: flex;
+    width: 900px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+} */
