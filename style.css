@@ -30,13 +30,26 @@ body {
 
 .para {
     color: hsl(193, 38%, 86%);
-    font-size: 20px;
-    font-weight: 300px;
+    font-size: 30px;
+    font-weight: 500px;
     text-align: center;
     margin: 20px 20px 0px 20px;
 }
 
 
+.dice-container {
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 30px;
+    margin: 20px 120px 0px 120px;
+}
+
+.fa-dice-five {
+font-size: 30px;
+width: 100%;
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+}
 /* desktop .....................................................................................*/
 
 

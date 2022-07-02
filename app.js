@@ -16,7 +16,7 @@ getAdviceNumber.append(header);
 //generate unique advice
 const para = document.createElement('p');
 para.className = 'para';
-para.append(res.data.slip.advice)
+para.append(`"${res.data.slip.advice}"`)
 adviceResultsDiv.append(para)
 }
 
