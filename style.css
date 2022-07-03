@@ -4,8 +4,6 @@ body {
 }
 
 #advice-container {
-  margin-left: 20px;
-  margin-right: 20px;
   background-color: hsl(217, 19%, 38%);
   border-radius: 20px;
   position: absolute;
@@ -31,7 +29,7 @@ h2 {
 
 .para {
   color: hsl(193, 38%, 86%);
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 500;
   text-align: center;
   margin: 20px 20px 0 20px;
@@ -42,11 +40,17 @@ h2 {
   margin-bottom: -75px;
 }
 
+
 .dice-container {
   background-color: hsl(150, 100%, 66%);
   border: solid 2px hsl(193, 38%, 86%);
   border-radius: 33px;
   margin: 20px 110px 0 110px;
+}
+
+.dice-container:hover {
+  /* filter: brightness(200%); */
+ 
 }
 
 .fa-dice-five {
