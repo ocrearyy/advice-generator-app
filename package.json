@@ -19,5 +19,8 @@
   "homepage": "https://github.com/ocrearyy/advice-generator-app#readme",
   "dependencies": {
     "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "hint": "^6.2.0"
   }
 }
