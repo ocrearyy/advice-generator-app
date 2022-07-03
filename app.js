@@ -8,7 +8,7 @@ const staticText = document.querySelector('#static');
 
 diceBtn.addEventListener('click', () => {
   const getAPI = async () => {
-  // Call API
+    // Call API
     const res = await axios.get('https://api.adviceslip.com/advice');
 
     //remove static text 
@@ -35,4 +35,4 @@ diceBtn.addEventListener('click', () => {
   getAPI();
   
 });
-// getAPI();
+
