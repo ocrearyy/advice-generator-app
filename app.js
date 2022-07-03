@@ -3,6 +3,8 @@ const getAdviceNumber = document.querySelector('#adviceNumber');
 const adviceResultsDiv = document.querySelector('#adviceResults');
 const diceBtn = document.querySelector('#getDataBtn');
 
+
+
 diceBtn.addEventListener('click', () => {
   const getAPI = async () => {
   // Call API
