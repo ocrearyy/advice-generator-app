@@ -49,8 +49,7 @@ h2 {
 }
 
 .dice-container:hover {
-  /* filter: brightness(200%); */
- 
+  box-shadow: 0 0 30px -2px #52ffa8; 
 }
 
 .fa-dice-five {
@@ -60,7 +59,18 @@ h2 {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 10px;
+  /* transform: rotate(90deg); */
 }
+
+#spinDice {
+  transition: transform 0.3s;
+}
+
+.rotateMe {
+  transition: all 0.8s ease;
+  transform: rotate(90deg);
+}
+
 
 #icons {
   color: hsl(193, 38%, 86%);
