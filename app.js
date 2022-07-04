@@ -36,8 +36,8 @@ diceBtn.addEventListener('click', () => {
     adviceResultsDiv.append(para);
 
     //Generate spin on btn 
-    // let element = document.querySelector('#spinDice');
-    // element.classList.add("rotateMe"); 
+    let element = document.querySelector('#spinDice');
+    element.classList.add("rotateMe"); 
 
     
   };
