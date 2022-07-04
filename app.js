@@ -13,6 +13,8 @@ diceBtn.addEventListener('click', () => {
 
     //remove static text 
     staticText.remove();
+    
+
 
     // generate unique id number
     const header = document.createElement('h1');
@@ -21,6 +23,7 @@ diceBtn.addEventListener('click', () => {
     while (getAdviceNumber.childElementCount > 0) {
       getAdviceNumber.firstChild.remove();
     }
+    
     getAdviceNumber.append(header);
 
     // generate unique advice
@@ -31,8 +34,15 @@ diceBtn.addEventListener('click', () => {
       adviceResultsDiv.firstChild.remove();
     }
     adviceResultsDiv.append(para);
+
+    //Generate spin on btn 
+    // let element = document.querySelector('#spinDice');
+    // element.classList.add("rotateMe"); 
+
+    
   };
   getAPI();
+  
   
 });
 
