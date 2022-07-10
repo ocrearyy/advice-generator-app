@@ -40,7 +40,6 @@ h2 {
   margin-bottom: -75px;
 }
 
-
 .dice-container {
   background-color: hsl(150, 100%, 66%);
   border: solid 2px hsl(193, 38%, 86%);
@@ -49,7 +48,7 @@ h2 {
 }
 
 .dice-container:hover {
-  box-shadow: 0 0 30px -2px #52ffa8; 
+  box-shadow: 0 0 30px -2px #52ffa8;
 }
 
 .fa-dice-five {
@@ -59,6 +58,7 @@ h2 {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 10px;
+
   /* transform: rotate(90deg); */
 }
 
@@ -71,7 +71,6 @@ h2 {
   transition: all 0.3s ease;
   transform: rotate(90deg);
 }
-
 
 #icons {
   color: hsl(193, 38%, 86%);
@@ -93,14 +92,11 @@ h2 {
 /* desktop ..................................................................................... */
 
 @media screen and (min-width: 720px) {
-
-#advice-container {
+  #advice-container {
     display: flex;
     width: 900px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
-}
-
+  }
 }
