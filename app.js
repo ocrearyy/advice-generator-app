@@ -39,7 +39,6 @@ diceBtn.addEventListener('click', () => {
     }
     adviceResultsDiv.append(para);
 
-
     
   };
   getAPI();
