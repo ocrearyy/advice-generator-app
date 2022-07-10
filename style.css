@@ -63,12 +63,12 @@ h2 {
 }
 
 #spinDice {
-  transition: transform 0.3s;
+  transition: transform 2s;
 }
 
 .rotateMe {
-  transition: all 0.8s ease;
-  transform: rotate(90deg);
+  transition: all 2s ease;
+  transform: rotate(180deg);
 }
 
 
