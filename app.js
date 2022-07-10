@@ -1,7 +1,7 @@
 // GET
 const getAdviceNumber = document.querySelector('#adviceNumber');
 const adviceResultsDiv = document.querySelector('#adviceResults');
-const diceBtn = document.querySelector('#getDataBtn');
+const diceBtn = document.querySelector('#spinDice');
 const staticText = document.querySelector('#static');
 
 
@@ -14,7 +14,10 @@ diceBtn.addEventListener('click', () => {
     //remove static text 
     staticText.remove();
     
-
+    //Generate spin on btn 
+    let element = document.querySelector('#spinDice');
+    element.classList.add("rotateMe"); 
+    
 
     // generate unique id number
     const header = document.createElement('h1');
@@ -35,9 +38,6 @@ diceBtn.addEventListener('click', () => {
     }
     adviceResultsDiv.append(para);
 
-//Generate spin on btn 
-    let element = document.querySelector('#spinDice');
-    element.classList.add("rotateMe"); 
     
   };
   getAPI();
