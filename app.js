@@ -17,7 +17,8 @@ diceBtn.addEventListener('click', () => {
     //Generate spin on btn 
     let element = document.querySelector('#spinDice');
     element.classList.add("rotateMe"); 
-    
+    setTimeout(() => 
+    element.classList.remove("rotateMe"), 800);
 
     // generate unique id number
     const header = document.createElement('h1');
