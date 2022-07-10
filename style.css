@@ -92,12 +92,15 @@ h2 {
 
 /* desktop ..................................................................................... */
 
+@media screen and (min-width: 720px) {
 
-/* #advice-container {
+#advice-container {
     display: flex;
     width: 900px;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 
-} */
+}
+
+}
