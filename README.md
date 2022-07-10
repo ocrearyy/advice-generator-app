@@ -15,8 +15,8 @@
 
 To get a local copy up and running follow these simple example steps.
 
-1. git clone git@github.com:oshanedesign/faq-accordion-card-main.git
-2. Cd into faq-accordion-card
+1. git clone git@github.com:ocrearyy/advice-generator-app.git
+2. Cd into advice-generator-app
 3. Run npm start to get project running locally
 
 ## Authors
