@@ -4,7 +4,7 @@
   "description": "![Design preview for the Advice generator app coding challenge](./design/desktop-preview.jpg)",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "webhint": "hint http://localhost:5500"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,6 @@
     "axios": "^0.27.2"
   },
   "devDependencies": {
-    "hint": "^6.2.0"
+    "hint": "^2.0.0"
   }
 }
