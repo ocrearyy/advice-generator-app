@@ -89,6 +89,29 @@ h2 {
   width: 100%;
 }
 
+.favouriteSection {
+  position: absolute;
+  top: 70%;
+}
+
+.fav {
+  color: white;
+  font-size: 32px;
+  margin: 20px;
+}
+
+.fa-folder-plus {
+  margin-left: 10px;
+}
+
+.favouriteItemBorder {
+border: 2px solid white;
+width: 250px;
+height: 50px;
+margin: 20px;
+}
+
+
 /* desktop ..................................................................................... */
 
 @media screen and (min-width: 720px) {
