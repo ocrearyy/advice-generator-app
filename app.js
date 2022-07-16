@@ -53,10 +53,10 @@ diceBtn.addEventListener('click', () => {
 
   favouriteSection.addEventListener('click', () => {
     const favouriteItem = document.createElement('p');
+    favouriteItem.innerHTML = `<p class="icons"><i class="fa-solid fa-magnifying-glass"></i> <i class="fa-solid fa-trash-can"></i></p>`
     favouriteItem.className = 'favouriteItemBorder';
     favouriteSection.append(favouriteItem)
     favouriteItem.append(`${getAdviceNumber.textContent}: ${ adviceResultsDiv.textContent}`)
-    
   })
 });
 
