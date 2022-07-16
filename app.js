@@ -3,6 +3,8 @@ const getAdviceNumber = document.querySelector('#adviceNumber');
 const adviceResultsDiv = document.querySelector('#adviceResults');
 const diceBtn = document.querySelector('#spinDice');
 const staticText = document.querySelector('#static');
+const favouriteSection = document.querySelector('.favouriteSection')
+
 
 diceBtn.addEventListener('click', () => {
   const getAPI = async () => {
@@ -35,7 +37,27 @@ diceBtn.addEventListener('click', () => {
     while (adviceResultsDiv.childElementCount > 0) {
       adviceResultsDiv.firstChild.remove();
     }
-    adviceResultsDiv.append(para);
+     adviceResultsDiv.append(para);
+    
+
+    //generate add to favourites button 
+    const addFavourite = document.createElement('p');
+    addFavourite.className = 'fav';
+    addFavourite.innerHTML = `<p>Add to Favourites<i class="fa-solid fa-folder-plus"></i></p>`;
+    while (favouriteSection.childElementCount > 0) {
+      favouriteSection.firstChild.remove();
+    }
+    favouriteSection.append(addFavourite)
   };
   getAPI();
+
+  favouriteSection.addEventListener('click', () => {
+    const favouriteItem = document.createElement('p');
+    favouriteItem.innerHTML = `<p class="icons"><i class="fa-solid fa-magnifying-glass"></i> <i class="fa-solid fa-trash-can"></i></p>`
+    favouriteItem.className = 'favouriteItemBorder';
+    favouriteSection.append(favouriteItem)
+    favouriteItem.append(`${getAdviceNumber.textContent}: ${ adviceResultsDiv.textContent}`)
+  })
 });
+
+
