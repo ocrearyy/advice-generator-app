@@ -56,9 +56,6 @@ diceBtn.addEventListener('click', () => {
     favouriteItem.className = 'favouriteItemBorder';
     favouriteSection.append(`${getAdviceNumber.textContent}: ${ adviceResultsDiv.textContent}`);
   })
-  
-
-
 });
 
 
