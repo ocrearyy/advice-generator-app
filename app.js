@@ -3,22 +3,22 @@ const getAdviceNumber = document.querySelector('#adviceNumber');
 const adviceResultsDiv = document.querySelector('#adviceResults');
 const diceBtn = document.querySelector('#spinDice');
 const staticText = document.querySelector('#static');
-const favouriteSection = document.querySelector('.favouriteSection')
+
 
 
 diceBtn.addEventListener('click', () => {
   const getAPI = async () => {
     // Call API
-    /* eslint-disable */ 
     const res = await axios.get('https://api.adviceslip.com/advice');
 
-    // remove static text
+    //remove static text 
     staticText.remove();
-
-    // Generate spin on btn
-    const element = document.querySelector('#spinDice');
-    element.classList.add('rotateMe');
-    setTimeout(() => element.classList.remove('rotateMe'), 800);
+    
+    //Generate spin on btn 
+    let element = document.querySelector('#spinDice');
+    element.classList.add("rotateMe"); 
+    setTimeout(() => 
+    element.classList.remove("rotateMe"), 800);
 
     // generate unique id number
     const header = document.createElement('h1');
@@ -27,7 +27,7 @@ diceBtn.addEventListener('click', () => {
     while (getAdviceNumber.childElementCount > 0) {
       getAdviceNumber.firstChild.remove();
     }
-
+    
     getAdviceNumber.append(header);
 
     // generate unique advice
@@ -37,27 +37,12 @@ diceBtn.addEventListener('click', () => {
     while (adviceResultsDiv.childElementCount > 0) {
       adviceResultsDiv.firstChild.remove();
     }
-     adviceResultsDiv.append(para);
-    
+    adviceResultsDiv.append(para);
 
-    //generate add to favourites button 
-    const addFavourite = document.createElement('p');
-    addFavourite.className = 'fav';
-    addFavourite.innerHTML = `<p>Add to Favourites<i class="fa-solid fa-folder-plus"></i></p>`;
-    while (favouriteSection.childElementCount > 0) {
-      favouriteSection.firstChild.remove();
-    }
-    favouriteSection.append(addFavourite)
+    
   };
   getAPI();
-
-  favouriteSection.addEventListener('click', () => {
-    const favouriteItem = document.createElement('p');
-    favouriteItem.innerHTML = `<p class="icons"><i class="fa-solid fa-magnifying-glass"></i> <i class="fa-solid fa-trash-can"></i></p>`
-    favouriteItem.className = 'favouriteItemBorder';
-    favouriteSection.append(favouriteItem)
-    favouriteItem.append(`${getAdviceNumber.textContent}: ${ adviceResultsDiv.textContent}`)
-  })
+  
+  
 });
-
 
