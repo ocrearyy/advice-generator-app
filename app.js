@@ -46,3 +46,22 @@ diceBtn.addEventListener('click', () => {
   
 });
 
+
+
+//date and time
+const getDate = new Date().toDateString();
+let displayDateInBrowser = document.querySelector('#date');
+displayDateInBrowser.innerHTML = getDate;
+displayDateInBrowser.className = 'date';
+
+let today = new Date(); 
+const getTime = today.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric',  hour12: true });
+let displayTimeInBrowser = document.querySelector('#time');
+displayTimeInBrowser.innerHTML = getTime;
+displayTimeInBrowser.className = 'time';
+
+
+
+
+
+
